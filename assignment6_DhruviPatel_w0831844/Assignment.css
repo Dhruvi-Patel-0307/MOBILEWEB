@@ -1,0 +1,43 @@
+
+body {
+    font-family: Helvetica, Arial, sans-serif; 
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-color: #888196; 
+    }
+    label {
+        font-size: 19px; 
+    }
+    .input-group {
+        margin-bottom: 9px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%; 
+        font-size: 18px; 
+    }
+}
+
+
+@media (min-width: 601px) {
+    body {
+        background-color: #8a6a7d;
+    }
+    .responsive-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    label {
+        text-align: right;
+    }
+    .input-group {
+        grid-column: span 2;
+    }
+}
