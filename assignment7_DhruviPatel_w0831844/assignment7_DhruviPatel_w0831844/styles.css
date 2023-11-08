@@ -1,0 +1,89 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #1A1A1A; 
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form-section {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label, .form-group span {
+  display: block;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="month"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #E0E0E0; 
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  background-image: linear-gradient(to right, #6e48aa, #9d50bb); 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 601px) {
+  .form-group {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+  }
+
+  .form-group label, .form-group span {
+      text-align: right;
+      padding-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-group label, .form-group span {
+      text-align: left;
+  }
+}
+
+label.error {
+  color: #FF0000;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+input.error, textarea.error, select.error {
+  border: 1px solid #FF0000;
+  background-color: #FFE5E5;
+}
