@@ -1,0 +1,58 @@
+
+
+body {
+    background-color: #b8bec5; 
+}
+
+header {
+    border-bottom: 2px solid #343a40; 
+}
+
+
+.row {
+    margin-bottom: 20px; 
+}
+
+
+.destination {
+    background-color: #28a745; 
+}
+
+
+.facts {
+    background-color: #ffc107; 
+}
+
+
+.highlights {
+    background-color: #dc3545; 
+}
+
+
+.must-visit {
+    background-color: #17a2b8; 
+}
+
+
+.tips {
+    background-color: #6c757d; 
+}
+
+
+@media (max-width: 576px) {
+    body {
+        background-color: #11421c; 
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        background-color: #5a4d22; 
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-color: #66282d; 
+    }
+}
