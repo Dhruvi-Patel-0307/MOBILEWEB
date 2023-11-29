@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dhruvi's Fictional Store Inventory</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Dhruvi Patel</h1>
+        </header>
+
+        <!-- Bootstrap Form (for small devices it comes first) -->
+        <div class="order-first order-md-0">
+            <div class="d-block d-lg-none">
+            <form>
+                <div class="form-group">
+                    <label for="productName"></label>
+                    <select class="form-control" id="productName">
+                        <option>SonicBlend Pro Mixer</option>
+                        <option>GrooveSync DJ Controller</option>
+                        <option>BeatFlow Sound Syste</option>
+                    </select>
+                </div>
+                <div class="form-group form-switch">
+                    <input type="checkbox" class="form-check-input" id="orderSwitch">
+                    <label class="form-check-label" for="orderSwitch">Would you like to order?</label>
+                </div>
+                <div class="form-group">
+                    <label for="productQuantity">Quantity</label>
+                    <input type="range" class="form-range" id="productQuantity">
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <!-- Bootstrap Responsive Image -->
+        <div class="py-4">
+            <img src="Photo 1.png" class="img-fluid" alt="Electronic Product">
+            <p class="text-center">A DJ is a performer and curator of music who expertly chooses, combines, and cuts recordings to provide listeners a smooth and pleasurable audio experience.</p>
+        </div>
+
+        <!-- Bootstrap Table -->
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SonicBlend Pro Mixer</td>
+                    <td>$150</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>GrooveSync DJ Controller</td>
+                    <td>$180</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>BeatFlow Sound System</td>
+                    <td>$300</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="order-first order-md-0">
+        <div class="d-none d-sm-block">
+        <form>
+            <div class="form-group">
+                <label for="productName"></label>
+                <select class="form-control" id="productName">
+                    <option>SonicBlend Pro Mixer</option>
+                    <option>GrooveSync DJ Controller</option>
+                    <option>BeatFlow Sound Syste</option>
+                </select>
+            </div>
+            <div class="form-group form-switch">
+                <input type="checkbox" class="form-check-input" id="orderSwitch">
+                <label class="form-check-label" for="orderSwitch">Would you like to order?</label>
+            </div>
+            <div class="form-group">
+                <label for="productQuantity">Quantity</label>
+                <input type="range" class="form-range" id="productQuantity">
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
